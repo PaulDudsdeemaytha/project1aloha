@@ -1,0 +1,206 @@
+/* All */ 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+/* Navigation flexbox */
+
+.container{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.navigation{
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar {
+  color: #e2574c;
+  width: 100%;
+  flex-basis: 50%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+.navbarflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.navbar ul li {
+  list-style: none;
+}
+
+.logo {
+  flex-basis: 25%;
+}
+
+.logo img {
+  width: 40%;
+  height: auto;
+  margin-left: 30px;
+  margin-top: 10px;
+
+}
+
+.cart {
+
+  flex-basis: 25%;
+  text-align: right;
+}
+
+.cart img {
+  width: 15%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* New Collection Spring/Summer 2016 */
+
+.flowerback {
+  text-align: center;
+  background-image: url(images/flower-bkgd.jpg);
+  color: white;
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
+}
+
+/* Handcrafted Styles */
+
+
+
+/* FLEXBOX */
+
+.containerflex {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  height: 500px;
+  flex-wrap: wrap-reverse;
+  color: white;
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
+  text-transform: uppercase;
+  font-size: 24px;
+  
+}
+
+.toprow {
+  display: flex;
+  height: 50%;
+}
+
+.box-1 {
+  flex-basis: 50%;
+}
+
+.box-2 {
+  flex-basis: 25%;
+}
+
+
+.secondrow {
+  display: flex;
+  height: 50%;
+}
+
+.mensimg {
+  background-image: url(images/mens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.saleimg {
+  background-image: url(images/trends-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trendsimg {
+  background-image: url(images/trends-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glassesimg {
+  background-image: url(images/glasses-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bagsimg {
+  background-image: url(images/sale-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.womensimg {
+  background-image: url(images/womens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FLIKER slider */
+
+.flicker h3 {
+  color: #e2574c;
+}
+
+/* Hand Crafted Styles Section */
+
+.secondsection {
+  text-align: center;
+}
+
+/* Sign Up for Updates */
+
+.updates {
+  text-align: center;
+  height: 250px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  color: white;
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
+}
+
+/* Footer Design */
+
+.containerbottom {
+  margin: 0px;
+  background-color: #242424;
+  color: white;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.grey {
+  color: #969696;
+}
+
+.containerbottom ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.contactinfo {
+  margin-top: 16px;
+  line-height: 28px;
+  margin-right: 40px;
+}
