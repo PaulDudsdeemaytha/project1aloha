@@ -2,92 +2,98 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Aloha Apperal Co.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
   <link rel="stylesheet" href="fonttypes/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
   <script src="https://use.fontawesome.com/c4c500256b.js"></script>
   <script src="main.js"></script>
 </head>
+
 <body>
 
-<!-- NAVIGATION  -->
+  <!-- navigation bar  -->
   <header class="container">
 
-  <nav class="navigation">
+    <nav class="navigation">
+
+      <div class="logo">
+        <img src="images/aloha-logo.svg" alt="aloha logo" class="logo" title="Aloha Logo">
+      </div>
+
+      <div class="navbar">
+        <ul class="navbarflex">
+          <div>
+            <li>
+              <a href="#aboutlink" style="color: #e2574c; text-decoration: none;">ABOUT</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#shoplink" style="color: #e2574c; text-decoration: none;">SHOP</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#featuredlink" style="color: #e2574c; text-decoration: none;">FEATURED</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#updatelink" style="color: #e2574c; text-decoration: none;">UPDATES</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+
+      <div class="cart">
+        <img src="images/cart-icon.svg" alt="cart icon" class="cart" title="Cart Icon">
+      </div>
 
 
 
-
-    <div class="logo">
-    <img src="images/aloha-logo.svg" alt="aloha logo" class="logo" title="Aloha Logo">
-    </div>
-    
-
-
-    <div class="navbar">
-    <ul class="navbarflex">
-      <div><li>ABOUT</li></div>
-      <div><li>SHOP</li></div>
-      <div><li>FEATURED</li></div>
-      <div><li>UPDATES</li></div>
-    </ul>
-    </div>
-
-
-
-
-    <div class="cart"> 
-      <img src="images/cart-icon.svg" alt="cart icon" class="cart" title="Cart Icon">
-    </div>
-
-
-
-  </nav>
-
+    </nav>
   </header>
 
-<!-- section with picture flower -->
+  <!-- flowerback -->
   <section class="flowerback">
     <div class="flowerbacktitle">
       <h1>NEW COLLECTION</h1>
-      <p><font face="Playfair Display">Spring/Summer 2016</font></p>
+      <p>
+        <font face="Playfair Display">Spring/Summer 2016</font>
+      </p>
     </div>
   </section>
 
 
 
-<!-- SECTION HAND CRAFTED STYLES -->
+  <!-- about section -->
 
-  <section class="secondsection">
+  <section id="aboutlink" class="secondsection">
     <div class="handcraftstyles">
-    <h2><i id="titlefontweight"> Hand-Crafted</i> Styles</h2>
-    <p>Aloha Apperal Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-upfor
-      updates below</p>
+      <h2>
+        <span id="titlefontweight" class="titledecoration"> Hand-Crafted</span> Styles</h2>
+      <p>Aloha Apperal Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
+        for updates below</p>
     </div>
   </section>
 
 
 
-<!-- FLEXBOX -->
-  <section class="containerflex">
+  <!-- shop flexbox section -->
+  <section id="shoplink" class="containerflex">
 
-    <div class="toprow">
-
-    <div class="box-1 mensimg">Men's</div>
-    <div class="box-2 trendsimg">Trends</div>
-    <div class="box-2 glassesimg">Glasses</div>
-
-    </div>
-
-    <div class="secondrow">
-
-    <div class="box-2 saleimg">Sale</div>
-    <div class="box-2 bagsimg">Bags</div>
-    <div class="box-1 womensimg">Women's</div>
-
+    <div class="containerflexbox">
+      <div class="imgbox mensimg"><p>Men's</p></div>
+      <div class="imgbox trendsimg"><p>Trends</p></div>
+      <div class="imgbox glassesimg"><p>Glasses</p></div>
+      <div class="imgbox saleimg"><p>Sale</p></div>
+      <div class="imgbox bagsimg"><p>Bags</p></div>
+      <div class="imgbox womensimg"><p>Women's</p></div>
     </div>
 
   </section>
@@ -95,11 +101,11 @@
 
 
 
-<!-- FLICK -->
+  <!-- featured items -->
 
-  <div class="flicker">
-    <h2>Most-Loved Products</h2>
-    <ul>
+  <div id="featuredlink" class="flicker">
+    <h2><span class="titledecoration">Most-Loved</span> Products</h2>
+    <!-- <ul>
       <li>
         <img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
         <p>DRESSES</p>
@@ -124,60 +130,125 @@
         <h3>Blue Hipster Backpack</h3>
         <p>&#36;69.00</p>
       </li>
-    </ul>
+    </ul> -->
+  
+  <div class="main-carousel">
+    <div class="carousel-cell">
+      <img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
+      <p>DRESSES</p>
+      <h3>Stretch Knit Dress</h3>
+      <p>&#36;169.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+      <p>SHIRTS</p>
+      <h3>Cotton Blue Shirt</h3>
+      <p>&#36;89.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+      <p>DRESSES</p>
+      <h3>Checked Stretch Dress</h3>
+      <p>&#36;129.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+      <p>BAGS</p>
+      <h3>Blue Hipster Backpack</h3>
+      <p>&#36;69.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow shirt">
+      <p>Shirts</p>
+      <h3>Cotton Yellow T-Shirt</h3>
+      <p>&#36;39.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">
+      <p>DRESSES</p>
+      <h3>Denim Overall Shorts</h3>
+      <p>&#36;89.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+      <p>DRESSES</p>
+      <h3>Blue Silk Dress</h3>
+      <p>&#36;119.00</p>
+    </div>
+    <div class="carousel-cell">
+      <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+      <p>DRESSES</p>
+      <h3>Pink Dotted Dress
+      </h3>
+      <p>&#36;99.00</p>
+    </div>
+
   </div>
-
-
-
-<!-- Sign-up for updates -->
-  <section class="updatessection">
+</div>
+  <!-- updates section-->
+  <section id="updatelink" class="updatessection">
     <div class="updatesbox">
-      <h2><i>Sign-up for</i> Updates</h2>
-      <p>Stay updated on our latest product releases, be first to find out about<br> upcoming sales, and get free style tips from
-      our blog. Unsubscribe at any time.</p>
-      <input type="text" width="100"><input type="submit">
-    </div>  
+      <h2><span class="titledecoration">Sign-up for</span> Updates</h2>
+      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
+        our blog. Unsubscribe at any time.</p>
+        <form>
+      <input type="text" placeholder="     Your Email">
+      <input type="submit">
+      </form>
+    </div>
   </section>
 
 
 
 
-<!-- FOOTER -->
+  <!-- footer -->
   <footer class="containerbottom">
 
 
-    <div>
-    <p>&#9400 2016 Aloha Apperal Co.
-      <br>Powered by HTML and CSS</p>
+    <div class="containerbottomtext">
+      <p>&#9400 2016 Aloha Apperal Co.
+        <br>Powered by HTML and CSS</p>
 
-    <p>604-604-6040 info@alohaapperal.com</p>
+      <p class="contactline">604-604-6040 info@alohaapparel.com</p>
 
-    <p class="grey">1460 W Broadway
-      <br>Vancouver, BC, Canada</p>
+      <p class="grey">1460 W Broadway
+        <br>Vancouver, BC, Canada</p>
+
+      <div class="contactinfo">
+        <ul class="sociallist">
+          <li>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <span class="socialicons">&nbsp&nbspFacebook</span>
+          </li>
+          <li>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <span class="socialicons">
+              &nbspTwitter</span>
+          </li>
+          <li>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span class="socialicons">
+              &nbspInstagram</span>
+          </li>
+          <li>
+            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            <span class="socialicons">
+              &nbspPinterest</span>
+          </li>
+          <li>
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+            <span class="socialicons">
+              &nbspGoogle+</span>
+          </li>
+        </ul>
+      </div>
     </div>
-
-
-
-    <div class="contactinfo">
-    <ul>
-      <li><i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp&nbspFacebook</li>
-      <li><i class="fa fa-twitter-square" aria-hidden="true"></i>
-        &nbspTwitter</li>
-      <li><i class="fa fa-instagram" aria-hidden="true"></i>
-        &nbspInstagram</li>
-      <li><i class="fa fa-pinterest-square" aria-hidden="true"></i>
-        &nbspPinterest</li>
-      <li><i class="fa fa-google-plus-square" aria-hidden="true"></i>
-        &nbspGoogle+</li>
-    </ul>
-    </div>
-    
 
   </footer>
 
-
-
-
-
+  <script src="jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <script src="content.js"></script>
 </body>
+
 </html>

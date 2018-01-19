@@ -1,267 +1,390 @@
+/* CSS RESET */
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+
 /* All */ 
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: 'Raleway', Arial, sans-serif;
-}
 
-h2 {
-  font-family: 'Playfair Display', Arial, sans-serif;
-}
+* {
+    box-sizing: border-box;
+  }
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-family: 'Raleway', Arial, sans-serif;
+    }
 
-/* Navigation flexbox */
+    h2 {
+      font-family: 'Playfair Display', Arial, sans-serif;
+      font-weight: 1000;
+    }
+    .titledecoration {
+      font-style: italic;
+      font-weight: 1;
+    }
+/* navigation bar */
+  .container{
+    width: 100%;
+    margin: 0;
+  }
 
-.container{
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
+  .navigation{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    
+  }
 
-.navigation{
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .navbar {
+    width: 100%;
+    flex-basis: 100%;
+    order: 3;
+   
+  }
+
+  .navbarflex {
+    display: flex;
+    width: 95%;
+    flex-grow: 1;
+    justify-content: center;
+    margin: auto;
+    border-top: 1px solid #d7d7d7;
+  }
+ .navbarflex div {
+  padding-left: .5rem;
+  padding-right: .5rem; 
+  padding-top: 1rem;
+ }
+
+  .logo {
+    flex-basis: 40%;
+    order: 1;
+    margin: .5rem;
+  }
+  .cart {
+    flex-basis: 40%;
+    text-align: right;
+    order: 2;
+    margin: .5rem;
+  }
+
+  .logo img {
+    min-width: 4rem;
+    max-width: 10rem;
+    height: auto;
+  }
+
+  .cart img {
+    max-width: 3.5rem;
+    height: auto;
+  }
+
+/* flowerback */
+
+  .flowerback {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center 70px, center;
+    background-size: contain, contain, cover;
+    color: white;
+    text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
+    height: 500px;
+    max-width: auto;
+    margin-top: 15px;
+  }
+
+  .flowerbacktitle {
+    text-align: center;
+    padding-top: 190px;
+    font-size: 50px;
+
+  }
+
+  .flowerbacktitle h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+/* about section */
+
+  .secondsection {
+    margin: 0;
+    padding: 0;
+    height: 16rem;
+    text-align: center;
+  }
+
+  .handcraftstyles h2 {
+    font-size: 35px;
+    padding-bottom: 1.5rem;
+  }
+  #titlefontweight {
+    font-weight: 1;
+  }
+  .handcraftstyles {
+    width: 100%;
+    height: 90%;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-weight: 10;
+    line-height: 35px;
+  }
+
+/* shop flexbox section */
+
+  .containerflexbox {
+    display: flex;
+    max-width: 100%;
+    flex-wrap:wrap;
+    color: white;
+    text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .containerflexbox div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-}
+  .imgbox {
+    flex: 1 1 50%;
+    border: 3px solid white;
+    height: 50vw;
+  }
 
-.navbar {
-  color: #e2574c;
-  width: 100%;
-  flex-basis: 50%;
-  margin-right: 5%;
-  margin-top: 10px;
-}
-
-.navbarflex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-.navbar ul li {
-  list-style: none;
-}
-
-.logo {
-  flex-basis: 25%;
-}
-
-.logo img {
-  width: 40%;
-  height: auto;
-  margin-left: 30px;
-  margin-top: 10px;
-
-}
-
-.cart {
-
-  flex-basis: 25%;
-  text-align: right;
-}
-
-.cart img {
-  width: 15%;
-  height: auto;
-  margin-top: 10px;
-  padding -right: 20px;
-}
-
-/* New Collection Spring/Summer 2016 */
-
-.flowerback {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-  background-repeat: no-repeat, no-repeat, repeat;
-  background-position: center, center 70px, center;
-  background-size: contain, contain, contain;
-  color: white;
-  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
-  height: 500px;
-  width: auto;
-  margin-top: 15px;
-}
-
-.flowerbacktitle {
-  text-align: center;
-  padding-top: 200px;
-  font-size: 50px;
-  line-height: 5px;
-}
-
-.flowerbacktitle h1 {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-}
+  .imgbox:nth-child(1), .imgbox:nth-child(6) {
+    flex-basis: 100%;
+  }
 
 
-/* Handcrafted Styles !!!!UNEDITED!!! */
 
-.secondsection {
-  margin: 0;
-  padding: 0;
-  height: 180px;
+  .mensimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/mens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .saleimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/sale-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .trendsimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/trends-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .glassesimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/glasses-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bagsimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/bags-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .womensimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/womens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* featured items */
+  .flicker {
+    text-align: center;
+  }
+  .flicker h2 {
+    font-size: 35px;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
   
-}
+  .carousel-cell {
+    width: 100%; /* full width */
+    height: 450px; /* height of carousel */
+    line-height: 35px;
+    color: #969696;
+  }
 
-.handcraftstyles h2 {
-  font-size: 35px;
-}
-#titlefontweight {
-  font-weight: 1;
-}
-.handcraftstyles {
-  width: 40%;
-  height: 90%;
-  margin: auto;
-  padding: 0;
-  text-align: center;
-  font-weight: 10;
-  line-height: 35px;
-}
+  .carousel-cell h3{
+    color: #e2574c;
+    font-family: 'Playfair Display', Arial, sans-serif;
+  }
 
-/* FLEXBOX */
 
-.containerflex {
-  display: flex;
-  max-width: 100%;
-  flex-direction: column;
-  height: 500px;
-  flex-wrap: wrap-reverse;
-  color: white;
-  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
-  text-transform: uppercase;
-  font-size: 24px;
-}
+/* updates section */
 
-.toprow {
-  display: flex;
-  height: 50%;
+  .updatessection {
+    text-align: center;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
+    margin-bottom: 10px;
+    margin-top: 4rem;
+  }
+
+  .updatesbox {
+
+    width: 98%;
+    padding-top: 3rem;
+    line-height: 35px;
+    font-weight: 10;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: auto; 
+  }
+
+  input[type=text] {
+    width: 80%;
+    height: 40px;
+    border-radius: 50px;
+
+  }
+
+  input[type=submit]{
+    position: absolute;
+  }
+
+
+  .updatesbox p{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .updatesbox h2 {
+    font-size: 35px;
+
+  }
+
+
+/* footer */
+
+  .containerbottom {
+    margin: 0px;
+    background-color: #242424;
+    color: white;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    line-height: 25px;
+  }
+  .containerbottomtext{
+    text-align: center;
+    padding: 4rem;
+
+  }
+  .contactline{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .grey {
+    color: #969696;
+  }
+  .sociallist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
   
-}
-
-.box-1 {
-  flex-basis: 50%;
-  border: 
-}
-
-.box-2 {
-  flex-basis: 25%;
-}
-
-
-.secondrow {
-  display: flex;
-  height: 50%;
-}
-
-.mensimg {
-  background-image: url(images/mens-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-}
-
-.saleimg {
-  background-image: url(images/trends-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.trendsimg {
-  background-image: url(images/trends-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.glassesimg {
-  background-image: url(images/glasses-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bagsimg {
-  background-image: url(images/sale-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.womensimg {
-  background-image: url(images/womens-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* FLIKER slider */
-
-.flicker h3 {
-  color: #e2574c;
-}
-
-/* Hand Crafted Styles Section */
-
-.secondsection {
-  text-align: center;
-}
-
-/* Sign Up for Updates */
-
-.updatessection {
-  text-align: center;
-  height: 350px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  color: white;
-  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
-  margin-bottom: 10px;
+  }
+  .sociallist li{
+    flex-basis: 2rem;
+  }
+  .contactinfo {
+    margin-top: 16px;
+    line-height: 28px;
+    margin-right: 40px;
+    list-style: none;
+    width: 100%;
   
-}
+  }
 
-.updatesbox {
-  margin: auto;
-  width: 50%;
-  padding-top: 30px;
-  line-height: 35px;
-  font-weight: 10;
-}
-
-.updatesbox i{
-  font-weight: 1;
-}
-
-.updatesbox h2 {
-  font-size: 35px;
-}
+  .socialicons {
+    display: none;
+  }
 
 
-/* Footer Design */
+/* all media query */
+  @media all and (min-width: 480px) {
+    .flowerback {
+      background-size: contain, contain, cover;
+    }
+    .updatessection {
 
-.containerbottom {
-  margin: 0px;
-  background-color: #242424;
-  color: white;
-  padding: 3%;
-  display: flex;
-  justify-content: space-between; 
-}
-
-.grey {
-  color: #969696;
-}
-
-.containerbottom ul {
-  list-style: none;
-  margin: 0px;
-}
-
-.contactinfo {
-  margin-top: 16px;
-  line-height: 28px;
-  margin-right: 40px;
-}
+    }
+  }
+  @media all and (min-width: 600px) {
+    .imgbox {
+      flex-basis: 25%;
+      height: 20vw;
+    }
+    .imgbox:nth-child(1),
+    .imgbox:nth-child(6) {
+      flex-basis: 50%;
+    }
+  }
