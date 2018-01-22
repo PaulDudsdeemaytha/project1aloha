@@ -58,7 +58,7 @@
     body {
       margin: 0;
       padding: 0;
-      font-size: 16px;
+      font-size: 14px;
       font-family: 'Raleway', Arial, sans-serif;
     }
 
@@ -70,10 +70,16 @@
       font-style: italic;
       font-weight: 1;
     }
+
 /* navigation bar */
   .container{
     width: 100%;
     margin: 0;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1000;
   }
 
   .navigation{
@@ -83,7 +89,9 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    
+   border-bottom: 1px solid #d7d7d7;
+   padding-bottom: 15px;
+ 
   }
 
   .navbar {
@@ -101,10 +109,13 @@
     margin: auto;
     border-top: 1px solid #d7d7d7;
   }
+
+ 
  .navbarflex div {
-  padding-left: .5rem;
-  padding-right: .5rem; 
+  padding-left: 1rem;
+  padding-right: 1rem; 
   padding-top: 1rem;
+
  }
 
   .logo {
@@ -141,13 +152,14 @@
     text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
     height: 500px;
     max-width: auto;
-    margin-top: 15px;
+    margin-top: 100px;
   }
 
   .flowerbacktitle {
     text-align: center;
     padding-top: 190px;
-    font-size: 50px;
+    font-size: 35px;
+
 
   }
 
@@ -163,12 +175,7 @@
 
 /* about section */
 
-  .secondsection {
-    margin: 0;
-    padding: 0;
-    height: 16rem;
-    text-align: center;
-  }
+
 
   .handcraftstyles h2 {
     font-size: 35px;
@@ -180,10 +187,12 @@
   .handcraftstyles {
     width: 100%;
     height: 90%;
-    padding-top: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     text-align: center;
     font-weight: 10;
     line-height: 35px;
+    margin: auto;
   }
 
 /* shop flexbox section */
@@ -213,7 +222,6 @@
   .imgbox:nth-child(1), .imgbox:nth-child(6) {
     flex-basis: 100%;
   }
-
 
 
   .mensimg {
@@ -292,27 +300,39 @@
 
   .updatesbox {
 
-    width: 98%;
+    max-width: 98%;
     padding-top: 3rem;
     line-height: 35px;
     font-weight: 10;
     padding-left: 1px;
     padding-right: 1px;
-    margin: auto; 
+    margin: auto;
+  }
+
+  .forminputs {
+    position: relative;
+    width:400px;
+    margin: 0 auto;
   }
 
   input[type=text] {
-    width: 80%;
-    height: 40px;
+    width: 90%;
+    height: 50px;
     border-radius: 50px;
-
+    border: white;
   }
 
-  input[type=submit]{
+  .subscribebutton {
+    height: 38px;
+    width: 100px;
+    border-radius:25px;
     position: absolute;
+    top: .3rem;
+    right: 1.5rem;
+    background-color:#e2574c;
+    color: white;
+    
   }
-
-
   .updatesbox p{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -320,7 +340,6 @@
 
   .updatesbox h2 {
     font-size: 35px;
-
   }
 
 
@@ -350,10 +369,11 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-  
+    /* display:none; */
   }
   .sociallist li{
     flex-basis: 2rem;
+
   }
   .contactinfo {
     margin-top: 16px;
@@ -361,7 +381,7 @@
     margin-right: 40px;
     list-style: none;
     width: 100%;
-  
+    font-weight: 100;
   }
 
   .socialicons {
@@ -370,21 +390,101 @@
 
 
 /* all media query */
+
   @media all and (min-width: 480px) {
     .flowerback {
       background-size: contain, contain, cover;
     }
-    .updatessection {
-
-    }
   }
+
   @media all and (min-width: 600px) {
+    body {
+      font-size: 16px;
+    }
     .imgbox {
       flex-basis: 25%;
-      height: 20vw;
+      height: 25vw;
     }
     .imgbox:nth-child(1),
     .imgbox:nth-child(6) {
       flex-basis: 50%;
     }
+    .navbarflex{
+      border-top: none;
+    }
+    .navigation{
+      flex-flow: nowrap;
+    }
+    .cart {
+      order: 3;
+      margin-top: .75rem;
+    }
+    .containerflexbox {
+      font-size: 2rem;
+    }
+    .carousel-cell {
+      width: 50%;
+    }
+
+         /* footer */
+    .aboutinfo {
+      text-align: left;
+    }
+    .containerbottomtext{
+      display: flex;
+      justify-content: space-between;
+    }
+    .sociallist {
+      margin: 0;
+      display: block;
+      text-align: left;
+      font-weight: 0;
+    }
+
+    .contactinfo {
+      width: 100px;
+      margin-top: 0;
+      /* font-weight: ; */
+      line-height: 30px;
+    }
+    /* .contactinfo {
+    margin-top: 16px;
+    line-height: 28px;
+    margin-right: 40px;
+    list-style: none;
+    width: 100%;
+  
+  } */
+    .socialicons {
+      display: inline;
+      
+    }
+    .contactinfo {
+      /* flex-basis: 50%; */
+    }
+
+    /* updates */
+
+  .updatesbox {
+    width: 600px;
   }
+  .handcraftstyles {
+    width: 600px;
+  }
+  .navigation {
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  .flowerbacktitle {
+    text-align: center;
+    padding-top: 190px;
+    font-size: 50px;
+  }
+  @media all and (min-width: 1240px) {
+    .carousel-cell {
+      width: 25%;
+    }
+    .contactinfo {
+      width: 150px;
