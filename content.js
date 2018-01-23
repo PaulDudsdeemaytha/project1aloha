@@ -1,11 +1,8 @@
-
-
-  $('.main-carousel').flickity({
+$('.main-carousel').flickity({
     // options
     cellAlign: 'left',
     contain: true
   });
-
 
 // Smooth Scrolling
   // Select all links with hashes
@@ -29,7 +26,7 @@
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 500, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -49,12 +46,4 @@ $("#subscribebutton").click(function(){
   if ($('#email').val().indexOf('@') < 1){
     alert('Please enter a valid e-mail');$('#email').val(''); return false
 } else{alert('Thanks for subscribing!'); $('#email').val('');return false}
-
 });
-
-
-  // if( /(.+)@(.+){2,}\.(.+){2,}/.test(booking_email) ){
-  //   // valid email
-  // } else { alert("Invalid Email, try again!")
-  //   // invalid email
-  // }var email = $("#email").val();
