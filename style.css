@@ -72,7 +72,7 @@
     }
 
 /* navigation bar */
-  .container{
+  .navcontainer{
     width: 100%;
     margin: 0;
     position: fixed;
@@ -94,7 +94,7 @@
  
   }
 
-  .navbar {
+  .navlinkcontainer {
     width: 100%;
     flex-basis: 100%;
     order: 3;
@@ -118,7 +118,7 @@
 
  }
 
-  .logo {
+  .logocontainer {
     flex-basis: 40%;
     order: 1;
     margin: .5rem;
@@ -130,7 +130,7 @@
     margin: .5rem;
   }
 
-  .logo img {
+  .logocontainer img {
     min-width: 4rem;
     max-width: 10rem;
     height: auto;
@@ -217,6 +217,10 @@
     flex: 1 1 50%;
     border: 3px solid white;
     height: 50vw;
+  }
+
+  .imgbox p:hover {
+    color: #e1d087;
   }
 
   .imgbox:nth-child(1), .imgbox:nth-child(6) {
@@ -315,23 +319,29 @@
     margin: 0 auto;
   }
 
-  input[type=text] {
+  input[type=email] {
     width: 90%;
     height: 50px;
     border-radius: 50px;
     border: white;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: 'Raleway', Arial, sans-serif;
   }
 
-  .subscribebutton {
+  button {
     height: 38px;
     width: 100px;
     border-radius:25px;
     position: absolute;
-    top: .3rem;
+    top: .35rem;
     right: 1.5rem;
     background-color:#e2574c;
     color: white;
     
+  }
+  button:hover{
+    background-color: #87342d;
   }
   .updatesbox p{
     padding-top: 1.5rem;
@@ -374,6 +384,9 @@
   .sociallist li{
     flex-basis: 2rem;
 
+  }
+  .sociallist li:hover {
+    color:#e2574c;
   }
   .contactinfo {
     margin-top: 16px;
@@ -418,6 +431,7 @@
     .cart {
       order: 3;
       margin-top: .75rem;
+      margin-right: 1rem;
     }
     .containerflexbox {
       font-size: 2rem;
@@ -444,23 +458,11 @@
     .contactinfo {
       width: 100px;
       margin-top: 0;
-      /* font-weight: ; */
       line-height: 30px;
     }
-    /* .contactinfo {
-    margin-top: 16px;
-    line-height: 28px;
-    margin-right: 40px;
-    list-style: none;
-    width: 100%;
-  
-  } */
+
     .socialicons {
       display: inline;
-      
-    }
-    .contactinfo {
-      /* flex-basis: 50%; */
     }
 
     /* updates */

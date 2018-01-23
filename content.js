@@ -45,4 +45,16 @@
     }
   });
 
+$("#subscribebutton").click(function(){
+  if ($('#email').val().indexOf('@') < 1){
+    alert('Please enter a valid e-mail');$('#email').val(''); return false
+} else{alert('Thanks for subscribing!'); $('#email').val('');return false}
 
+});
+
+
+  // if( /(.+)@(.+){2,}\.(.+){2,}/.test(booking_email) ){
+  //   // valid email
+  // } else { alert("Invalid Email, try again!")
+  //   // invalid email
+  // }var email = $("#email").val();
