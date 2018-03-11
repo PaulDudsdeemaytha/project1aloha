@@ -145,7 +145,7 @@
 /* flowerback */
 
   .flowerback {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center, center 70px, center;
     background-size: contain, contain, cover;
@@ -230,37 +230,37 @@
 
 
   .mensimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/mens-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/mens-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .saleimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/sale-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/sale-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .trendsimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/trends-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../images/trends-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .glassesimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/glasses-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../images/glasses-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .bagsimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/bags-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../images/bags-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .womensimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/womens-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/womens-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -293,7 +293,7 @@
   .updatessection {
     text-align: center;
     height: 350px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/wave-bkgd.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -488,3 +488,6 @@
     .sociallistcontainer {
       width: 150px;
 
+    }
+  }
+}
