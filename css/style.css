@@ -54,6 +54,7 @@
 
   * {
     box-sizing: border-box;
+    /* width: 100%; */
   }
     body {
       margin: 0;
@@ -106,7 +107,7 @@
     width: 95%;
     flex-grow: 1;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
     border-top: 1px solid #d7d7d7;
   }
 
